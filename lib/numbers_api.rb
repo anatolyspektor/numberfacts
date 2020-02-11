@@ -5,7 +5,7 @@ module NumbersApi
   # these uses RestClient to get a fact from api
   def self.get_fact(number)
     begin
-      response = RestClient.get("http://numbersttapi.com/#{number}", headers={})
+      response = RestClient.get("#{ENV['NUMBERS_API']}#{number}", headers={})
       if response.code == 200
         return response.body
       end

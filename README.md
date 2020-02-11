@@ -15,6 +15,9 @@ To start:
 
 `bundle install`
 `rake db:create`
+rename `.env.sample` to `.env`
+start server and go to  `/`
+
 
 API used in this code:
 
