@@ -19,6 +19,7 @@ This app uses simple number facts api to show facts based on the number.
 To start:
 
 `bundle install`
+`yarn install --check-files`
 `rake db:create`
 rename `.env.sample` to `.env`
 `rails s`
