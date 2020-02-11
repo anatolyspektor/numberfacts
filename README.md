@@ -15,3 +15,7 @@ To start:
 
 `bundle install`
 `rake db:create`
+
+API used in this code:
+
+http://numbersapi.com/
