@@ -45,6 +45,7 @@ group :development do
   # Rspec rails is not yet compatible with Rails 6, this is patch
   gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails', branch: "4-0-maintenance"
   gem 'rails-controller-testing'
+  gem 'webmock'
 end
 
 
