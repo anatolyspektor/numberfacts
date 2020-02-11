@@ -41,10 +41,13 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-    gem 'rspec'
-    gem 'rspec-rails'
+  gem 'rspec'
+  # Rspec rails is not yet compatible with Rails 6, this is patch
+  gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails', branch: "4-0-maintenance"
+  gem 'rails-controller-testing'
 end
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'rest-client'
