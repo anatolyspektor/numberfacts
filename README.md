@@ -5,10 +5,10 @@ This is not a production ready app, but my play with numbers api and Materialize
 
 ### Stack:
 
-Rails 6
-Ruby 2.6.0
-MySQL (even though it is not used yet :) )
-Materialize CSS
+* Rails 6
+* Ruby 2.6.0
+* MySQL (even though it is not used yet :) )
+* Materialize CSS
 
 ### Description
 
@@ -18,11 +18,11 @@ This app uses simple number facts api to show facts based on the number.
 
 To start:
 
-`bundle install`
-`yarn install --check-files`
-`rake db:create`
-rename `.env.sample` to `.env`
-`rails s`
+1. `bundle install`
+2. `yarn install --check-files`
+3. `rake db:create`
+4. rename `.env.sample` to `.env`
+5. `rails s`
 
 
 API used in this code:
