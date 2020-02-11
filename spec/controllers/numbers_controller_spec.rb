@@ -20,10 +20,9 @@ RSpec.describe NumbersController do
           to_return(status: 200, body: "Hello Hello", headers: {})
     end
 
-
     context 'when number is valid' do
       before do
-        get :funny_fact, params: {number: 3}
+        post :funny_fact, params: {number: {number: 3}}
       end
 
       it { expect(response).to have_http_status(:success) }
@@ -32,7 +31,7 @@ RSpec.describe NumbersController do
     context 'when number is invalid' do
 
       before do
-        get :funny_fact, params: {number: 'testing'}
+        post :funny_fact, params: {number: {number: 'testing'}}
       end
 
       it { expect(response).to have_http_status(:success) }

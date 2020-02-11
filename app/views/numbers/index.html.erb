@@ -1,1 +1,5 @@
-Did you know that 42 is a magic number ?
+<%= form_for :number, url: funny_fact_url do |f| %>
+  <%= f.label  "What is your favourite number ?"  %>
+  <%= f.text_field :number, :required => 'required' %>
+  <%= f.submit "Get Number Facts!" %>
+<% end %>
