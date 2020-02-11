@@ -1,5 +1,14 @@
-<%= form_for :number, url: funny_fact_url do |f| %>
-  <%= f.label  "What is your favourite number ?"  %>
-  <%= f.text_field :number, :required => 'required' %>
-  <%= f.submit "Get Number Facts!" %>
-<% end %>
+<div class="container">
+    <%= form_for :number, {url: funny_fact_url} do |f| %>
+    <div class="row">
+      <div class="input-field col s12">
+        <%= f.label  "What is your favourite number ?"  %>
+        <%= f.text_field :number, :required => 'required' %>
+      </div>
+    </div>
+    <div class="input-field col s12 center">
+      <%= f.submit "Get Number Facts", class: "teal btn" %>
+    </div>
+    <% end %>
+  </div>
+</div>

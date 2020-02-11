@@ -1,10 +1,37 @@
-<%= @fact %>
-
-
-<% flash.each do |type, msg| %>
-  <div>
-    <%= msg %>
+<% if flash.empty? %>
+  <div class="container">
+    <div class="row">
+        <div class="card teal darken-1">
+          <div class="card-content white-text">
+            <h5> <%= @fact %></h5>
+          </div>
+          <div class="card-action">
+            <a href="/">Try again ?</a>
+          </div>
+      </div>
+    </div>
   </div>
+
+<% else %>
+  <div class="container">
+    <% flash.each do |type, msg| %>
+      <div class="row">
+        <div class="card red darken-1">
+          <div class="card-content white-text">
+            <%= msg %>
+          </div>
+          <div class="card-action">
+            <a href="/">Try again ?</a>
+          </div>
+        </div>
+
+      </div>
+  </div>
+  <% end %>
 <% end %>
 
-<%= link_to  "Try Again?", root_path %>
+
+
+
+
+<%#= link_to  "Try Again?", root_path %>
